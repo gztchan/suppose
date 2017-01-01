@@ -1,0 +1,7 @@
+<div class="main-container">
+  <div class="index-block">
+    <% page.posts.each(function(item){ %>
+      <%- partial('_partial/article-archive', { item: item }) %>
+    <% }); %>
+  </div>
+</div>

@@ -1,0 +1,254 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: #5c5c5c;
+  font-weight: 600;
+}
+
+img {
+  box-shadow: 0 4px 20px #5c5c5c;
+}
+
+blockquote {
+  background: #eee;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+.theme-color {
+  color: #5c5c5c;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.default-title {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+}
+
+.block-title {
+  background: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.block {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+nav {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+  a {
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    background: #000;
+    font-weight: 100;
+  }
+}
+
+.main-container {
+  .container;
+  .info-block {
+    .block;
+    display: flex;
+    font-size: 0.8rem;
+    overflow: hidden;
+    max-height: 140px;
+
+    .avatar {
+      display: block;
+      width: auto;
+      height: 140px;
+      box-shadow: none;
+      border: none;
+      background: #000;
+    }
+
+    .text {
+      padding: 10px;
+      color: #5c5c5c;
+      .author {
+        font-size: 20px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        @media screen and (min-width: 650px) {
+          & {
+            font-size: 20px;
+          }
+        }
+
+        @media screen and (max-width: 650px) {
+          & {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .desc {
+        vertical-align: top;
+        padding: 5px 10px;
+        @media screen and (min-width: 650px) {
+          & {
+            font-size: 16px;
+          }
+        }
+
+        @media screen and (max-width: 650px) {
+          & {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .index-block {
+    .block;
+    .post-preview {
+      // margin-top: 5px;
+      a {
+        text-decoration: none;
+      }
+
+      .post-title {
+        .default-title;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 400;
+
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+
+      .post-date {
+        vertical-align: bottom;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .projects-block {
+    .block;
+    .project {
+      margin-left: 10px;
+      padding: 5px 0;
+      .project-title {
+        font-size: 1rem;
+      }
+
+      .project-desc {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .contacts-block {
+    .block;
+    margin-bottom: 0;
+    .contact {
+      padding: 5px 0;
+      .cate {
+        padding: 10px 0;
+        margin-left: 10px;
+        font-size: 0.8rem;
+      }
+
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.post-container {
+  .container;
+  margin-bottom: 30px;
+
+  .post-title {
+    .default-title;
+    margin-bottom: 20px;
+    font-size: 2.45rem;
+  }
+
+  .post-date {
+    color: gray;
+    font-size: 0.75rem;
+  }
+
+  .post-content {
+    margin-top: 10px;
+
+    .default-h {
+      background: #000;
+      color: #fff;
+      padding: 10px 10px;
+      font-weight: 200;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      .default-h;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      color: #5c5c5c;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      line-height: 20px;
+      padding: 10px 0px;
+    }
+
+    img {
+      text-align: center;
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .hljs {
+      font-size: 0.85rem;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="post-container">
+  <p class="post-title">
+    <%- item.title %>
+  </p>
+  <i class="post-date"><%=item.date.format(config.date_format) %></i>
+  <div class="post-content">
+    <%- item.content %>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="post-preview">
+  <a href="<%- config.root %><%- item.path %>">
+    <span class="post-title">
+      <%- item.title || theme.default_post_title || "Untitled" %>
+    </span>
+  </a>
+  <span class="post-date">@<%=item.date.format(config.date_format) %></span>
+</div>

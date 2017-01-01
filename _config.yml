@@ -1,0 +1,11 @@
+
+menu:
+  Home: /
+  Archives: /archives
+
+plugins:
+- Hexo-renderer-less
+
+less:
+  paths:
+    - source/css
