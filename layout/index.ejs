@@ -1,14 +1,7 @@
 <div class="main-container">
-  <div class="info-block">
-    <img class="avatar" src='<%- config.avatar %>'>
-    <div class="text">
-      <p class="author"><%- config.author %></p>
-      <p class="desc"><%- config.description %></p>
-    </div>
-  </div>
   <div class="index-block">
     <p class="block-title">posts</p>
-    <% page.posts.each(function(item){ %>
+    <% page.posts.reverse().each(function(item){ %>
       <%- partial('_partial/article-index', { item: item }) %>
     <% }); %>
   </div>
