@@ -1,7 +1,7 @@
 <div class="main-container">
   <div class="index-block">
     <p class="block-title">posts</p>
-    <% page.posts.reverse().each(function(item){ %>
+    <% page.posts.each(function(item){ %>
       <%- partial('_partial/article-index', { item: item }) %>
     <% }); %>
   </div>
@@ -13,8 +13,8 @@
   </div>
   <div class="contacts-block">
     <p class="block-title">contacts</p>
-    <% config.contacts.map(function(item) { %>
-      <%- partial('_partial/contact', { item: item }) %>
-    <% }); %>
+    <div class="contacts">
+      <% config.contacts.map(function(item) {%><a href='<%- item.url %>' target='_blank'><span><%- item.cate %></span></a><%}); %>
+    </p>
   </div>
 </div>
