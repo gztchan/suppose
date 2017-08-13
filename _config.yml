@@ -9,3 +9,4 @@ plugins:
 less:
   paths:
     - source/css
+    - source/font

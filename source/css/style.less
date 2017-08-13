@@ -1,9 +1,14 @@
 
+@font-face {
+  font-family: "FZQKBYS";
+  src: url('../font/FZQingKeBenYueSongS-R-GB.TTF');
+}
+
 html, body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "FZQKBYS", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
 }
 
 p {
@@ -20,10 +25,6 @@ a {
 li {
   color: #5c5c5c;
   font-size: 0.85rem;
-}
-
-img {
-  box-shadow: 0 4px 20px #5c5c5c;
 }
 
 .theme-color {
@@ -195,22 +196,21 @@ nav {
   .post-content {
     margin-top: 10px;
 
-    .default-h {
-      background: #000;
-      color: #fff;
-      padding: 10px 10px;
-      font-weight: 200;
-    }
-
     a {
       text-decoration: underline;
       color: #5c5c5c;
       font-weight: 600;
     }
 
+    h2, h3, h4 {
+      font-weight: 300;
+    }
+
     h2 {
+      background: #000;
+      color: #fff;
+      padding: 10px 10px;
       font-size: 1.3rem;
-      .default-h;
     }
 
     h3 {
@@ -235,9 +235,9 @@ nav {
 
     p {
       color: #5c5c5c;
-      font-size: 0.85rem;
+      font-size: 14px;
       letter-spacing: 1.5px;
-      line-height: 20px;
+      line-height: 22px;
       padding: 10px 0px;
     }
 
