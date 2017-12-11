@@ -14,7 +14,11 @@
   <div class="contacts-block">
     <p class="block-title">contacts</p>
     <div class="contacts">
-      <% config.contacts.map(function(item) {%><a href='<%- item.url %>' target='_blank'><span><%- item.cate %></span></a><%}); %>
+        <% config.contacts.map(function(item) {%>
+          <div class="c-block">
+            <a href='<%- item.url %>' target='_blank'><span class="title"><%- item.cate %></span></a>
+          </div>
+        <%}); %>
     </p>
   </div>
 </div>
